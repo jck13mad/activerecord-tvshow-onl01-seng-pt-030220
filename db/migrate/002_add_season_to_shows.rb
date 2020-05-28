@@ -1,6 +1,7 @@
 class AddSeasonToShows < ActiveRecord::Migration[5.2]
   
-  def 
+  def change
+    create_table if not EXIST 
   
   
 end
