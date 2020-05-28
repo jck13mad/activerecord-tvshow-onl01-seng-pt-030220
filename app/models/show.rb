@@ -5,6 +5,19 @@ class Show < ActiveRecord::Base
   end
   
   def self.most_popular_show
-    Shoe.order("rating DESC").last
+    Show.order("rating DESC").first
+  end
+  
+  def lowest_rating
+    Show.minimum("rating")
+  end
+  
+  def least_popular_show
+    Show.order("rating ASC").first
+  end
+  
+  def ratings_sum
+    Show.sum("rating")
+  end
   
 end
