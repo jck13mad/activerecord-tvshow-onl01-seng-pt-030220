@@ -1,2 +1,3 @@
 class shows < ActiveRecord::Base 
-  def 
+  def change 
+    
