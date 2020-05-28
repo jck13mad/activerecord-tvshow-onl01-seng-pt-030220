@@ -4,7 +4,7 @@ class CreateShows < ActiveRecord::Base
       s.string :name 
       s.string :network
       s.string :day 
-      s.rating :integer 
+      s.integer :rating 
       s.timestamp
     end
   end
